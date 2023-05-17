@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="menuPane" styleClass="menuPane" prefWidth="75" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <StackPane fx:id="logo" styleClass="logo"/>
+    </top>
+    <center>
+        <VBox fx:id="menuItemsPane" styleClass="menuItemsPane">
+            <Button fx:id="homeButton" />
+            <Button fx:id="inboxButton" />
+            <Button fx:id="peopleButton" />
+            <Button fx:id="scheduleButton" />
+            <Button fx:id="invoiceButton" />
+            <Button fx:id="chartButton" />
+        </VBox>
+    </center>
+</BorderPane>
