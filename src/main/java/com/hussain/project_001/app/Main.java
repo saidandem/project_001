@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         DashboardController dashboardController = new DashboardController();
-        Scene scene = new Scene(dashboardController.getPanel(), 1100, 800);
+        Scene scene = new Scene(dashboardController.getPanel(), 900, 700);
         scene.getStylesheets().add(getClass().getResource("/styles/base.css").toExternalForm());
         stage.setTitle("Project 001");
         stage.setScene(scene);

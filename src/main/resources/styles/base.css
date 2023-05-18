@@ -17,6 +17,10 @@
     -fx-background-color: -fx-menu-background;
 }
 
+.menuItemsPane{
+    -fx-alignment: center;
+}
+
 .menuItemsPane .button,
 .menuItemsPane .button:pressed,
 .menuItemsPane .button:focused {
@@ -88,6 +92,14 @@
 
 #chartButton:hover{
     -fx-graphic: url("../images/chart_hover.png");
+}
+
+#settingsButton{
+    -fx-graphic: url("../images/settings.png");
+}
+
+#settingsButton:hover{
+    -fx-graphic: url("../images/settings_hover.png");
 }
 
 /**
