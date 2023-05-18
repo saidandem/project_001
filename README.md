@@ -38,4 +38,4 @@ Overall the work is divided into multiple parts so that we can have clear idea o
  ## Current Progress
  Current progress of the project is displayed as screenshot or gif (when workflow is ready).
  
- ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status.gif)
+ ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status.png)
