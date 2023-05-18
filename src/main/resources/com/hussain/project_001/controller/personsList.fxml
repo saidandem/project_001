@@ -11,16 +11,16 @@
         <StackPane fx:id="searchPane" styleClass="searchPane" prefHeight="50">
             <children>
                 <HBox fx:id="searchBox" styleClass="search-box" alignment="CENTER_LEFT">
-                    <TextField fx:id="searchField" maxWidth="250" minWidth="80.0" promptText="" HBox.hgrow="ALWAYS"/>
+                    <TextField fx:id="searchField" maxWidth="250" minWidth="80.0" promptText="First Name or Last Name" HBox.hgrow="ALWAYS"/>
                     <StackPane fx:id="searchIcon" HBox.hgrow="NEVER"/>
                 </HBox>
             </children>
         </StackPane>
     </top>
     <center>
-        <ScrollPane fx:id="scrollPane">
+        <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true">
             <content>
-                <FlowPane fx:id="flowPane"/>
+                <FlowPane fx:id="flowPane" styleClass="personsInfoFlowPane"/>
             </content>
         </ScrollPane>
     </center>
