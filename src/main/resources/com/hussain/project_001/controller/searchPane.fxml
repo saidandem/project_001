@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="searchPane" styleClass="searchPane" prefHeight="50" fx:controller="com.hussain.project_001.controller.SearchPaneController" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <HBox fx:id="searchBox" styleClass="search-box" alignment="CENTER_LEFT">
+            <TextField fx:id="searchField" maxWidth="250" minWidth="80.0" promptText="" HBox.hgrow="ALWAYS"/>
+            <StackPane fx:id="searchIcon" HBox.hgrow="NEVER"/>
+        </HBox>
+    </children>
+</StackPane>

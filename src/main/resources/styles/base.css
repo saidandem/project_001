@@ -17,12 +17,15 @@
     -fx-level3: #FF3365;
     -fx-level-shadow: #999999;
 
+    -fx-progress-color: #FF7361;
+
     /* Common properties */
     -fx-background-color: -fx-app-background;
 }
 
-.label{
+.label, .text{
     -fx-font-family: verdana;
+    -fx-font-size: 14px;
 }
 
 /**
@@ -166,10 +169,20 @@
     -fx-background-color:  -fx-app-border-color;
 }
 
-.personsInfoFlowPane{
+.infoFlowPane{
     -fx-padding: 20px;
     -fx-hgap: 20px;
     -fx-vgap: 20px;
+}
+
+.back-button,
+.back-button:focused,
+.back-button:hover,
+.back-button:pressed{
+    -fx-graphic: url("../images/back-button.png");
+    -fx-background-color:transparent;
+    -fx-background-radius: 0px;
+    -fx-background-insets:0px;
 }
 
 /**
@@ -180,13 +193,12 @@
     -fx-border-width: 1px;
     -fx-border-color: -fx-info-pane-border;
     -fx-background-color: -fx-info-pane-background;
-    -fx-border-radius: 5px;
-    -fx-background-radius: 5px;
-    -fx-min-width: 240px;
-    -fx-pref-width: 240px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-min-width: 215x;
+    -fx-pref-width: 215px;
     -fx-min-height: 240px;
     -fx-pref-height: 240px;
-
 }
 
 .infoPane:hover{
@@ -249,6 +261,162 @@
 }
 
 /**
+ *  Utility Tile Pane
+ */
+.utilityTilePane{
+    -fx-padding: 20px 20px 20px 0px;
+}
+
+.utitlityTitlePane{
+    -fx-alignment: center-left;
+    -fx-padding: 0px 0px 8px 0px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: -fx-info-pane-border;
+}
+
+.utitlityTitlePane .label{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.utitlityDescriptionLabel{
+    -fx-padding: 10px 0px 0px 0px;
+    -fx-font-size: 14px;
+}
+
+.iconPane{
+    -fx-pref-weight: 72px;
+    -fx-min-width: 72px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center top;
+}
+
+.iconPane.iphone{
+    -fx-background-image: url("../images/apple-logo.png")
+}
+
+.iconPane.android{
+    -fx-background-image: url("../images/android.png")
+}
+
+.iconPane.chrome{
+    -fx-background-image: url("../images/chrome.png")
+}
+
+.iconPane.outlook{
+    -fx-background-image: url("../images/outlook.png")
+}
+
+.iconPane.firefox{
+    -fx-background-image: url("../images/firefox.png")
+}
+
+.iconPane.desktop{
+    -fx-background-image: url("../images/desktop.png")
+}
+
+.iconPane.microsoft{
+    -fx-background-image: url("../images/microsoft.png")
+}
+
+.iconPane.opera{
+    -fx-background-image: url("../images/opera.png")
+}
+
+.iconPane.safari{
+    -fx-background-image: url("../images/safari.png")
+}
+
+.refreshPane{
+    -fx-background-image: url("../images/refresh.png");
+    -fx-background-repeat: no-repeat;
+    -fx-min-width:34px;
+    -fx-min-height:24px;
+    -fx-max-width:34px;
+    -fx-max-height:24px;
+}
+
+.searchPane,
+.navigationPane{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: -fx-app-border-color;
+}
+
+.formContainer,
+.detailsContainer{
+    -fx-padding: 30px;
+}
+
+.formTitleLabel .text{
+    -fx-font-size: 22px;
+}
+
+.utilityFormLayout,
+.requestDetailsLayout{
+    -fx-hgap: 30px;
+    -fx-vgap: 6px;
+}
+
+.personFormLayout{
+    -fx-hgap: 30px;
+    -fx-vgap: 15px;
+}
+
+.formLabel{
+    -fx-padding: 10px 0px 0px 0px;
+}
+
+.formLabel .text,
+.personFormLabel .text{
+    -fx-font-size: 16px;
+}
+
+#detailsTitleLabel{
+    -fx-graphic: url("../images/check_64.png");
+    -fx-graphic-text-gap: 15px;
+}
+
+/**
+ *  Progress Bar
+ */
+.progress-bar{
+    -fx-pref-width: Infinity;
+    -fx-accent: -fx-progress-color;
+}
+
+.progress-bar .bar {
+    -fx-padding: 4px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submit-progress-bar {
+    -fx-accent: rgba(0, 138, 230, 0.85);
+}
+
+.submit-progress-bar .bar {
+    -fx-padding: 2px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.submit-progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/**
  *  Scroll Pane
  */
 .scroll-pane,
@@ -256,8 +424,7 @@
     -fx-background-color: transparent;
     -fx-background-insets: 0px;
     -fx-background-radius: 0px;
-    -fx-border-width: 1px 0px 1px 0px;
-    -fx-border-color: -fx-app-border-color;
+    -fx-border-width: 0px;
 }
 
 .scroll-pane > .viewport,

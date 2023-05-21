@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<BorderPane fx:id="navigationPane" styleClass="navigationPane" prefHeight="50" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <left>
+       <StackPane>
+           <Button fx:id="backButton" styleClass="back-button" />
+       </StackPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="requestDetailsPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <top>
+
+    </top>
+    <center>
+        <VBox styleClass="detailsContainer" spacing="20" alignment="TOP_LEFT">
+            <Label fx:id="detailsTitleLabel" styleClass="formTitleLabel" text="Request Submitted Successfully"/>
+            <GridPane fx:id="requestDetailsLayout" styleClass="requestDetailsLayout">
+                <children>
+                    <Label text="First Name" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <Label fx:id="firstNameLbl" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Label text="Last Name" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <Label fx:id="lastNameLbl" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                    <Label text="Email" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <Label fx:id="emailLbl" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                    <Label text="Phone" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <Label fx:id="phoneLbl" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                    <Label text="Subject" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                    <Label fx:id="subjectLbl" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+                    <Label text="Message" styleClass="formLabel" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                    <Label fx:id="messageLbl" wrapText="true" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+                </children>
+                <columnConstraints>
+                    <ColumnConstraints minWidth="150"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints valignment="TOP"/>
+                    <RowConstraints valignment="TOP"/>
+                    <RowConstraints valignment="TOP"/>
+                    <RowConstraints valignment="TOP"/>
+                    <RowConstraints valignment="TOP"/>
+                    <RowConstraints valignment="TOP"/>
+                </rowConstraints>
+            </GridPane>
+        </VBox>
+    </center>
+</BorderPane>

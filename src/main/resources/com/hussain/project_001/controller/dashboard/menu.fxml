@@ -13,9 +13,9 @@
     </top>
     <center>
         <VBox fx:id="menuItemsPane" styleClass="menuItemsPane">
-            <Button fx:id="homeButton" />
+            <Button fx:id="homeButton"/>
             <Button fx:id="inboxButton" />
-            <Button fx:id="peopleButton" />
+            <Button fx:id="peopleButton"/>
             <Button fx:id="scheduleButton" />
             <Button fx:id="invoiceButton" />
             <Button fx:id="chartButton" />

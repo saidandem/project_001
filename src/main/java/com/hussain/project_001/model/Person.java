@@ -1,16 +1,26 @@
 package com.hussain.project_001.model;
 
 import javafx.beans.property.*;
+import javafx.collections.ObservableList;
 
 import java.time.LocalDate;
 
 public class Person {
     private StringProperty firstName;
     private StringProperty lastName;
+    private StringProperty gender;
     private StringProperty address1;
     private StringProperty address2;
     private StringProperty city;
     private IntegerProperty zip;
+
+    private BooleanProperty sendNotifications;
+
+    private DoubleProperty score;
+
+    private ListProperty<String> zones;
+
+
 
     private ObjectProperty<LocalDate> dateOfBirth;
     private ObjectProperty<Level> level;
@@ -18,12 +28,16 @@ public class Person {
     public Person() {
         this.firstName = new SimpleStringProperty();
         this.lastName = new SimpleStringProperty();
+        this.gender = new SimpleStringProperty("Male");
         this.address1 = new SimpleStringProperty();
         this.address2 = new SimpleStringProperty();
         this.city = new SimpleStringProperty();
+        this.score = new SimpleDoubleProperty();
         this.zip = new SimpleIntegerProperty();
         this.dateOfBirth = new SimpleObjectProperty<>();
         this.level = new SimpleObjectProperty<>(Level.LEVEL1);
+        this.zones = new SimpleListProperty<>();
+        this.sendNotifications = new SimpleBooleanProperty();
     }
 
     public String getFirstName() {
@@ -120,5 +134,53 @@ public class Person {
 
     public void setLevel(final Level level) {
         this.level.set(level);
+    }
+
+    public String getGender() {
+        return gender.get();
+    }
+
+    public StringProperty genderProperty() {
+        return gender;
+    }
+
+    public void setGender(final String gender) {
+        this.gender.set(gender);
+    }
+
+    public double getScore() {
+        return score.get();
+    }
+
+    public DoubleProperty scoreProperty() {
+        return score;
+    }
+
+    public void setScore(final double score) {
+        this.score.set(score);
+    }
+
+    public ObservableList<String> getZones() {
+        return zones.get();
+    }
+
+    public ListProperty<String> zonesProperty() {
+        return zones;
+    }
+
+    public void setZones(final ObservableList<String> zones) {
+        this.zones.set(zones);
+    }
+
+    public boolean isSendNotifications() {
+        return sendNotifications.get();
+    }
+
+    public BooleanProperty sendNotificationsProperty() {
+        return sendNotifications;
+    }
+
+    public void setSendNotifications(final boolean sendNotifications) {
+        this.sendNotifications.set(sendNotifications);
     }
 }

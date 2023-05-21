@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<BorderPane fx:id="utilitiesPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <BorderPane fx:id="utilitiesListPane">
+            <top>
+                <fx:include fx:id="searchPane" source="../searchPane.fxml"/>
+            </top>
+            <center>
+                <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true">
+                    <content>
+                        <FlowPane fx:id="flowPane" styleClass="infoFlowPane"/>
+                    </content>
+                </ScrollPane>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>

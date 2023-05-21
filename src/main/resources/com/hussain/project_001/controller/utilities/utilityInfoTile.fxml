@@ -1,0 +1,19 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="infoPane" styleClass="infoPane, utilityTilePane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <StackPane fx:id="iconPane" styleClass="iconPane" />
+    </left>
+    <center>
+        <VBox styleClass="utitlityDetailsPane">
+            <children>
+                <StackPane styleClass="utitlityTitlePane">
+                    <Label fx:id="titleLabel" />
+                </StackPane>
+                <Label fx:id="descriptionLabel" styleClass="utitlityDescriptionLabel" wrapText="true"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

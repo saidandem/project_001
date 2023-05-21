@@ -1,0 +1,32 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.control.ProgressBar?>
+<StackPane fx:id="infoPane" styleClass="infoPane" alignment="TOP_LEFT" xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml">
+    <VBox styleClass="infoDetailsPane">
+        <StackPane styleClass="infoTopPane">
+            <Label fx:id="dobLabel" styleClass="infoLabel,dobLabel"/>
+        </StackPane>
+        <StackPane>
+            <GridPane styleClass="infoBottomPane">
+                <children>
+                    <Label fx:id="fullNameLabel" styleClass="fullNameLabel" GridPane.columnIndex="0"
+                           GridPane.rowIndex="0"/>
+                    <Label fx:id="address1Label" styleClass="infoLabel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <Label fx:id="address2Label" styleClass="infoLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <Label fx:id="cityLabel" styleClass="infoLabel" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                    <Label fx:id="zipLabel" styleClass="infoLabel" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                </children>
+            </GridPane>
+            <StackPane fx:id="refreshPane" styleClass="refreshPane" StackPane.alignment="BOTTOM_RIGHT"/>
+        </StackPane>
+    </VBox>
+    <StackPane fx:id="initialsPane" styleClass="initialsPane" maxWidth="-Infinity" maxHeight="-Infinity">
+        <Circle fx:id="levelCircle" styleClass="levelCircle" radius="30"/>
+        <Label fx:id="initialsLabel" styleClass="initialsLabel"/>
+    </StackPane>
+    <ProgressBar fx:id="progressBar" visible="false" StackPane.alignment="BOTTOM_LEFT"/>
+</StackPane>

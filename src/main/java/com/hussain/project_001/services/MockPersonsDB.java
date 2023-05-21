@@ -20,7 +20,7 @@ public class MockPersonsDB {
             "Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"
     };
 
-    private static final String[] CITIES = {
+    public static final String[] CITIES = {
             "New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia",
             "San Antonio", "San Diego", "Dallas", "San Jose"
     };

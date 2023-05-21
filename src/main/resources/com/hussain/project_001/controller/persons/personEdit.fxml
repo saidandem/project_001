@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="personEditPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <top>
+
+    </top>
+    <center>
+        <StackPane alignment="TOP_LEFT">
+            <VBox styleClass="formContainer" spacing="20" alignment="TOP_LEFT">
+                <Label fx:id="formTitleLabel" styleClass="formTitleLabel" text="Edit Person"/>
+                <GridPane fx:id="personFormLayout" styleClass="personFormLayout">
+                    <children>
+                        <Label text="First Name" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <TextField fx:id="firstName" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                        <Label text="Last Name" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                        <Label text="Gender" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <HBox GridPane.columnIndex="1" GridPane.rowIndex="2" alignment="CENTER_LEFT" spacing="12">
+                            <fx:define>
+                                <ToggleGroup fx:id="group"/>
+                            </fx:define>
+                            <RadioButton fx:id="maleRadio" text="Male" toggleGroup="$group"/>
+                            <RadioButton fx:id="femaleRadio" text="Female" toggleGroup="$group"/>
+                        </HBox>
+
+                        <Label text="Date of Birth" styleClass="personFormLabel" GridPane.columnIndex="0"
+                               GridPane.rowIndex="3"/>
+                        <DatePicker fx:id="dateOfBirth" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                        <Label text="Zones" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="4" spacing="12">
+                            <CheckBox fx:id="zone1CB" text="Zone 1"/>
+                            <CheckBox fx:id="zone2CB" text="Zone 2"/>
+                            <CheckBox fx:id="zone3CB" text="Zone 3"/>
+                        </VBox>
+
+                        <Label text="Send Notifications" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                        <CheckBox fx:id="notificationsCB" styleClass="toggle-switch" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+                        <Label text="Status" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+                        <ChoiceBox fx:id="statusChoiceBox" prefWidth="125" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+                        <Label text="City" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+                        <ComboBox fx:id="cityComboBox" prefWidth="125" promptText="Select city" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+                        <Label text="Score" styleClass="personFormLabel" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+                        <Slider fx:id="scoreSlider" min="1" max="6" showTickMarks="true" snapToTicks="true" majorTickUnit="1" blockIncrement="1" showTickLabels="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+                        <Button fx:id="saveBtn" text="Save" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints minWidth="150"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints valignment="TOP"/>
+                        <RowConstraints valignment="TOP"/>
+                        <RowConstraints valignment="TOP"/>
+                        <RowConstraints valignment="TOP"/>
+                        <RowConstraints valignment="TOP"/>
+                    </rowConstraints>
+
+
+                </GridPane>
+            </VBox>
+        </StackPane>
+    </center>
+</BorderPane>
