@@ -7,23 +7,23 @@ Overall the work is divided into multiple parts so that we can have clear idea o
 - [x] Project kick off template in github
 - [x] Readme explanation
 - [x] Window and root
-- [ ] Side Menu
+- [x] Side Menu
    - [x] Icons button
    - [x] Icons styling
    - [x] Hovering
-   - [ ] Click operation
+   - [x] Click operation
 - [x] Top Bar
    - [x] Logo
    - [x] SearchBox
 - [x] Center / Main content
    - [x] Layout (FlowPane / GridPane)
    - [x] Scroll bar styling
-- [ ] Tiles
+- [x] Tiles
    - [x] Layout / Loading
    - [x] Hovering
-   - [ ] Click operation
+   - [x] Click operation
 - [ ] Form Window
-   - [ ] Layout and Model
+   - [x] Single & Double Layout and Model
    - [ ] CSS styling
       - [ ] TextField
       - [ ] CheckBox (may be as a toggle switch)
@@ -33,7 +33,7 @@ Overall the work is divided into multiple parts so that we can have clear idea o
       - [ ] TextArea
       - [ ] DatePicker
       - [ ] ComboBox
-      - [ ] ProgressBar
+      - [x] ProgressBar
  
  ## Current Progress
  Current progress of the project is displayed as screenshot or gif (when workflow is ready).

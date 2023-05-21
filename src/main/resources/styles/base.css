@@ -17,7 +17,8 @@
     -fx-level3: #FF3365;
     -fx-level-shadow: #999999;
 
-    -fx-progress-color: #FF7361;
+    -fx-progress-bar-color: #FF7361;
+    -fx-progress-track-color: transparent;
 
     /* Common properties */
     -fx-background-color: -fx-app-background;
@@ -381,7 +382,7 @@
  */
 .progress-bar{
     -fx-pref-width: Infinity;
-    -fx-accent: -fx-progress-color;
+    -fx-accent: -fx-progress-bar-color;
 }
 
 .progress-bar .bar {
@@ -395,7 +396,7 @@
     -fx-background-radius: 0;
     -fx-text-box-border: transparent;
     -fx-control-inner-background: transparent;
-    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-color: -fx-progress-track-color;
 }
 
 .submit-progress-bar {
