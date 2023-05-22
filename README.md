@@ -22,20 +22,23 @@ Overall the work is divided into multiple parts so that we can have clear idea o
    - [x] Layout / Loading
    - [x] Hovering
    - [x] Click operation
-- [ ] Form Window
+- [x] Form Window
    - [x] Single & Double Layout and Model
-   - [ ] CSS styling
-      - [ ] TextField
-      - [ ] CheckBox (may be as a toggle switch)
-      - [ ] RadioButton
-      - [ ] ToggleButton
-      - [ ] Button
-      - [ ] TextArea
-      - [ ] DatePicker
-      - [ ] ComboBox
+   - [x] CSS styling
+      - [x] TextField
+      - [x] CheckBox
+      - [x] RadioButton
+      - [x] ToggleButton
+      - [x] Button
+      - [x] TextArea
+      - [x] DatePicker
+      - [x] ComboBox
       - [x] ProgressBar
  
  ## Current Progress
  Current progress of the project is displayed as screenshot or gif (when workflow is ready).
  
  ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status.gif)
+
+ ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status-components.png)
+

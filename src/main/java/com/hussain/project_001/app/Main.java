@@ -1,7 +1,6 @@
 package com.hussain.project_001.app;
 
 import com.hussain.project_001.controller.dashboard.DashboardController;
-import com.hussain.project_001.utils.MyScenicView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,12 +13,12 @@ public class Main extends Application {
     public void start(Stage stage) {
         DashboardController dashboardController = new DashboardController();
         Scene scene = new Scene(dashboardController.getPanel(), 820, 620);
-        scene.getStylesheets().add(getClass().getResource("/styles/base.css").toExternalForm());
+        scene.getStylesheets().addAll(getClass().getResource("/styles/base.css").toExternalForm(),
+                getClass().getResource("/styles/app.css").toExternalForm());
         stage.setTitle("Project 001");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        MyScenicView.show(scene);
     }
 
     /**

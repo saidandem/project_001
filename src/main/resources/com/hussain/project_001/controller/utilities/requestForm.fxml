@@ -35,7 +35,7 @@
                             <RadioButton fx:id="feedBack" text="Feedback" toggleGroup="$group"/>
                             <RadioButton fx:id="others" text="Others" toggleGroup="$group"/>
                         </VBox>
-                        <Button fx:id="sendBtn" text="Send" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+                        <Button fx:id="sendBtn" text="Send" styleClass="app-button" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
 
                         <Label text="Last Name" styleClass="formLabel" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
                         <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
