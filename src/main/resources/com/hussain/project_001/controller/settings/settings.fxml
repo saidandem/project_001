@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.hussain.project_001.controls.VerticalTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:id="settingsPane" hgap="20" vgap="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="Type 1" styleClass="typeLabel" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label text="Type 2" styleClass="typeLabel" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Group GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <VerticalTableView fx:id="type1TableView"/>
+        </Group>
+        <Group GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <VerticalTableView fx:id="type2TableView"/>
+        </Group>
+
+        <Label text="Type 3" styleClass="typeLabel" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <Label text="Type 4" styleClass="typeLabel" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Group GridPane.columnIndex="0" GridPane.rowIndex="3">
+            <VerticalTableView fx:id="type3TableView"/>
+        </Group>
+        <Group GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <VerticalTableView fx:id="type4TableView"/>
+        </Group>
+    </children>
+    <padding>
+        <Insets topRightBottomLeft="20"/>
+    </padding>
+</GridPane>

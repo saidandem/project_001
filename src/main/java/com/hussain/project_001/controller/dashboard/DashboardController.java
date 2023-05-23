@@ -2,6 +2,7 @@ package com.hussain.project_001.controller.dashboard;
 
 import com.hussain.project_001.controller.AbstractController;
 import com.hussain.project_001.controller.persons.PersonsController;
+import com.hussain.project_001.controller.settings.SettingsController;
 import com.hussain.project_001.controller.utilities.UtilitiesController;
 import com.hussain.project_001.model.Utility;
 import javafx.fxml.FXML;
@@ -27,6 +28,8 @@ public class DashboardController extends AbstractController {
     private PersonsController personsListController;
 
     private UtilitiesController utilitiesListController;
+
+    private SettingsController settingsController;
 
     /**
      * Constructor.
@@ -60,6 +63,13 @@ public class DashboardController extends AbstractController {
         return utilitiesListController;
     }
 
+    public SettingsController getSettingsController() {
+        if (settingsController == null) {
+            settingsController = new SettingsController();
+        }
+        return settingsController;
+    }
+
     public void showUtilities() {
         dashboard.setCenter(getUtilitiesListController().getPanel());
     }
@@ -67,4 +77,9 @@ public class DashboardController extends AbstractController {
     public void showPersons() {
         dashboard.setCenter(getPersonsListController().getPanel());
     }
+
+    public void showSettings() {
+        dashboard.setCenter(getSettingsController().getPanel());
+    }
+
 }

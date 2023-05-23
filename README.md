@@ -24,6 +24,7 @@ Overall the work is divided into multiple parts so that we can have clear idea o
    - [x] Click operation
 - [x] Form Window
    - [x] Single & Double Layout and Model
+   - [x] Vertical Table Control
    - [x] CSS styling
       - [x] TextField
       - [x] CheckBox
@@ -40,5 +41,7 @@ Overall the work is divided into multiple parts so that we can have clear idea o
  
  ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status.gif)
 
- ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status-components.png)
+![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status-components.png)
+
+![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/vertical-table-status.png)
 

@@ -26,6 +26,9 @@ public class MenuController extends AbstractController {
     @FXML
     private Button peopleButton;
 
+    @FXML
+    private Button settingsButton;
+
 
     private DashboardController dashboardController;
 
@@ -41,6 +44,11 @@ public class MenuController extends AbstractController {
         LOGGER.info("MenuController : onControllerLoad....");
         homeButton.setOnAction(this::showUtitlities);
         peopleButton.setOnAction(this::showPersons);
+        settingsButton.setOnAction(this::showSettings);
+    }
+
+    private void showSettings(final ActionEvent actionEvent) {
+        dashboardController.showSettings();
     }
 
     @FXML
