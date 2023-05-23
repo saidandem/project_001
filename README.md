@@ -43,5 +43,5 @@ Overall the work is divided into multiple parts so that we can have clear idea o
 
 ![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/status-components.png)
 
-![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/vertical-table-status.png)
+![](https://github.com/saidandem/project_001/blob/master/src/main/resources/gitfiles/vertical-table-status.gif)
 
